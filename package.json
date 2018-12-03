@@ -1,0 +1,23 @@
+{
+  "name": "12-3kaoshi",
+  "version": "1.0.0",
+  "description": "移动项目整合第一次周考",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zqd77/12-3kaoshi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zqd77/12-3kaoshi/issues"
+  },
+  "homepage": "https://github.com/zqd77/12-3kaoshi#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
