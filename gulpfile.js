@@ -18,7 +18,7 @@ gulp.task('server', function() {
         return gulp.src('src')
             .pipe(server({
                 port: 8000,
-                // open: true,
+                open: true,
                 middleware: function(req, res, next) {
                     var pathname = require('url').parse(req.url).pathname;
                     if (pathname === '/favicon.ico') {
@@ -45,8 +45,8 @@ gulp.task('js', function() {
 
 });
 gulp.task('copy', function() {
-        return gulp.src('./src/devjs/libs/*.js')
-            .pipe(gulp.dest('./src/js/libs'))
-    })
-    //开发环境
-gulp.task('dev', gulp.series('scss', 'server', 'watch'));
+    return gulp.src('./src/devjs/libs/*.js')
+        .pipe(gulp.dest('./src/js/libs'))
+});
+//开发环境
+gulp.task('default', gulp.series('scss', 'js', 'copy', 'server', 'watch'));
