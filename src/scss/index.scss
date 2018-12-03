@@ -8,5 +8,58 @@
 .container {
     width: 100%;
     height: 100%;
-    background: palegreen;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    width: 100%;
+    height: pxTorem(40px);
+    display: flex;
+    li {
+        flex: 1;
+        font-size: pxTorem(20px);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.banner {
+    width: 100%;
+    height: pxTorem(200px);
+    margin-bottom: pxTorem(15px);
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    h2 {
+        height: pxTorem(40px);
+        line-height: pxTorem(40px);
+        font-size: pxTorem(25px);
+        margin-bottom: pxTorem(10px);
+    }
+    dl {
+        display: flex;
+        margin-bottom: pxTorem(10px);
+        dd {
+            font-size: pxTorem(18px);
+            margin-left: pxTorem(10px);
+        }
+    }
+}
+
+.active {
+    color: red
+}
+
+.bg {
+    background: orange;
 }
